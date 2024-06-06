@@ -1,0 +1,4 @@
+com\student\app\entity\Student.class
+com\student\app\controller\StudentController.class
+com\student\app\repository\StudentRepository.class
+com\student\app\AppApplication.class

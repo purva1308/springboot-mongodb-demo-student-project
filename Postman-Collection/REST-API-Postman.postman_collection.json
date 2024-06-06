@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "5171fbaa-4ebd-4d90-b462-3c0db9dca4e6",
+		"name": "REST-API-Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13167923"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/api/students/above-90-in-maths",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/students/above-90-in-maths",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"students",
+						"above-90-in-maths"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/students/insertStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"105\",\r\n    \"name\": \"Uvw\",\r\n    \"division\": 4,\r\n    \"mathsScore\": 98\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/students/insertStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"students",
+						"insertStudent"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
