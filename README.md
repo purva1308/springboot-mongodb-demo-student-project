@@ -30,18 +30,30 @@ C. "dockerImages" contains the springboot and mongodb images
 D. Steps to run docker images 
 
 1> Import the docker image from the "dockerImages" folder 
+
  docker load < tar-file-name-provided 
+ 
 2> Check following docker images must be created by below command: student-spring-mongo , mongo 
+
 docker images 
+
 3> Run below command to execute the docker images for spring boot app to get connected to mongodb 
+
 docker run -p 8081:8081 --name student-spring-mongo --link studentmongodb:mongo -d student-spring-mongo:1.0
+
 4> Run below command to check if server is up and mongodb is connected 
+
 docker logs student-spring-mongo
 
 General Info:
+
 For mongo to run have followed below steps :
-1> Pulled mongo image
+
+1> Pulled mongo docker image
+
 docker pull mongo:latest
+
 2> created image/host studentmongodb and run it on mongo default port 
+
 docker run -d -p 27017:27017 --name studentmongodb mongo:latest
 
